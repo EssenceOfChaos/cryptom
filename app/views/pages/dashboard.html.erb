@@ -1,0 +1,32 @@
+
+<h1 class="ui top attached header">
+  <i class="bitcoin icon"></i>
+  <div class="content">
+    Dashboard
+    <div class="sub header"><%=current_user.username%>'s Dashboard</div>
+  </div>
+</h1>
+
+<div class="ui attached segment">
+<div class="ui grid">
+<div class="six wide column">
+<div class="ui raised card" >
+  <div class="content">
+    <div class="header" id="user_card" ><%=current_user.username%></div>
+    <div class="meta" id="user_card" >
+      <span class="category" id="user_card"> <%=current_user.created_at.strftime("Member since %b. %d, %Y") %></span>
+    </div>
+    <div class="description"  >
+      <p>You may change your icon at <a href='http://en.gravatar.com'>Gravatar</a></p>
+      <%= gravatar_for @user %>
+</div>
+    </div>
+  
+  <div class="extra content">
+  <p>Last signed in <%=time_ago_in_words(current_user.last_sign_in_at)%> ago</p>
+  </div>
+</div>
+</div>
+
+</div>
+</div>

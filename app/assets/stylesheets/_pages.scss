@@ -1,0 +1,103 @@
+// font-family: 'Sansita', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Lora', serif;
+
+
+
+// ***** Global Styling ***** //
+
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  font-family: 'Sansita', sans-serif;
+}
+.content {
+  flex: 1;
+  margin-top: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+
+  #navbar {
+    background-color: $deep-purple;
+    color: $white;
+  }
+  
+  .ui .fixed .inverted .menu {
+   // background-color: $deep-purple;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+// views/layouts/application.html.erb
+#app-wrapper {
+  margin-top: 50px;
+    flex: 1;
+}
+
+#pageinate{
+  text-align: center;
+  position: relative;
+}
+
+
+  #error_explanation {
+    color: red;
+    font-weight: bold;
+  }
+
+  #myImage {
+  position: relative;top:13px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+
+
+
+.footer {
+  background-color: $deep-purple !important;
+  text-align: center;
+}
+ .footer.segment {
+      background-color: $deep-purple;
+      color: $white;
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+    }
+// ***** Alignment Styling ***** //
+
+
+.center {
+  text-align: center;
+}
+
+#float_right {
+  float: right;
+}

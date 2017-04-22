@@ -1,0 +1,61 @@
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
+<div class="ui form segment">
+<div class="ui grid">
+<div class="six wide column">
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+</div>
+<div class="ten wide column"></div>
+<div class="six wide column">
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+</div>
+<div class="ten wide column"></div>
+<div class="six wide column">
+<% if devise_mapping.rememberable? -%>
+          <div class="field">
+            
+  <img id="myImage" onclick="changeImage()" src="http://i.imgur.com/0JtgN89.png" width="40" height="40"> <strong>Remember me</strong>
+          </div>
+      <% end -%>
+    <div class="ten wide column"></div>
+
+<div class="six wide column">
+<div class="ui hidden error message">
+    <div class="header">We don't have a record of that email address.</div>
+    <p>Create an account before logging in.</p>
+  </div>
+</div>
+<br>
+<div class="ten wide column"></div>
+  <div class="actions">
+    <%= f.submit "Log in", class: 'ui secondary button' %>
+  </div>
+<% end %>
+</div>
+</div>
+
+</div>
+
+<div class="ui segment">
+<p>Don't have an account yet?</p>
+<%= render "devise/shared/links" %>
+</div>
+
+<script>
+    function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("http://i.imgur.com/0JtgN89.png")) {
+            image.src = "http://i.imgur.com/vdZvrPm.png";
+        } else {
+            image.src = "http://i.imgur.com/0JtgN89.png";
+        }
+    }
+</script>

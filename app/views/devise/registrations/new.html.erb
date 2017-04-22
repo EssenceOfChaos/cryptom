@@ -1,0 +1,68 @@
+<h2>Sign up</h2>
+<!-- sign up form -->
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+<div class="ui form segment">
+  <p>Don't have an account? Let's go ahead and get you signed up.</p>
+  <!-- username field-->
+   <div class="field">
+    <label>Username</label>
+    <%= f.text_field :username, placeholder: 'Username', required: true, autofocus: true %>
+  </div>
+  <!-- email field -->
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true, placeholder: 'email@example.com' %>
+  </div>
+  <!-- password field-->
+   <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+  <!-- password confirmation field -->
+    <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+
+  <!-- checkbox field-->
+  <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" name="terms">
+      <label>I agree to the <a href="/terms_and_conditions">Terms and Conditions</a></label>
+    </div>
+  </div>
+  <!-- submit button -->
+    <div class="actions">
+    <%= f.submit "Sign up", class: 'ui disabled primary submit button', id: 'signup' %>
+  </div>
+  <!-- form error message -->
+  <div class="ui error message"></div>
+</div>
+<%end%>
+<br>
+
+<div class="ui segment">
+<p>Already have an account?</p>
+<%= render "devise/shared/links" %>
+</div>
+
+<script>
+$('input[name=terms]').change(function () {
+$("#signup").removeClass("ui disabled primary submit button").addClass("ui  primary submit button");
+    });
+
+
+    $('input[name=terms]').click(function() {
+        if ($(this).is(':checked')) {
+            $('#signup').removeAttr('disabled');
+        } else {
+            $('#signup').attr('disabled', 'disabled');
+        }
+    });
+
+</script>
