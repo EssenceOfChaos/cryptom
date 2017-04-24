@@ -2,7 +2,7 @@
 <h1 class="ui top attached header">
   <i class="bitcoin icon"></i>
   <div class="content">
-    Dashboard
+   Cryptom
     <div class="sub header"><%=current_user.username%>'s Dashboard</div>
   </div>
 </h1>
@@ -27,6 +27,14 @@
   </div>
 </div>
 </div>
+<div class="six wide column">
+  <div class="label">
+   Current Bitcoin Price
+  </div>
+<div class="btc_price">
+     1 bitcoin = <span class="btc_value"><%= number_to_currency(@price.price) %></span> as of <%=current_time.strftime("%I:%M%p")%>
+  </div>
 
+</div>
 </div>
 </div>

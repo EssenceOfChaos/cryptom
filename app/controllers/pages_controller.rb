@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @price = current_price.data.prices.first
   end
 
   def contact

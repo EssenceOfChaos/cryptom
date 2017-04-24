@@ -1,5 +1,5 @@
 require 'block_io'
-BlockIo.set_options :api_key=> Rails.application.secrets.block_api, :pin => Rails.application.secrets.block_pin,  :version => 2
+BlockIo.set_options :api_key => Rails.application.secrets.block_api, :pin => Rails.application.secrets.block_pin,  :version => 2
 
 # Now you're good to go. Here's an example call:
 # BlockIo.get_new_address(:label => 'shibe1')
