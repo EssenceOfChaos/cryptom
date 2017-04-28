@@ -167,6 +167,6 @@ production:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      uri: "mongodb://<dbuser>:<dbpassword>@ds115671.mlab.com:15671/heroku_m65w1mw0"
+      uri: "mongodb://cryptom:monster@ds115671.mlab.com:15671/heroku_m65w1mw0"
    
 

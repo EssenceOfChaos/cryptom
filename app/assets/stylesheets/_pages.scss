@@ -109,13 +109,14 @@ font-size: 1.3rem;
 }
 
 .btc_price {
+  font-size: 1.2rem;
   margin-top: 10px;
 
 
 }
 .btc_value {
-  font-size: 1.2rem;
-  color: $blue;
+  font-size: 1.4rem;
+  color: darken( $blue, 40% );
   font-weight: bold;
 
 }

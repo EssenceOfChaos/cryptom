@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '83d242c7a87ad985bc89be0092a278d438fc5c5e8b89555bb318ec87ab1dc882db4c32698ed526945cb327c2feb99d81f08eb60ea48e93033549e9ef6c922dff'
+  config.secret_key = '83d242c7a87ad985bc89be0092a278d438fc5c5e8b89555bb318ec87ab1dc882db4c32698ed526945cb327c2feb99d81f08eb60ea48e93033549e9ef6c922dff'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -271,4 +271,13 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+  require "omniauth-linkedin"
+  require "omniauth-twitter"
+  require "omniauth-facebook"
+  require "omniauth-github"
+
+  config.omniauth :linkedin, '7742ah72x6lo8j', 'AOGm1R0Ng1eOBz25', :scope => 'r_basicprofile r_emailaddress'
+  config.omniauth :twitter, 'imBAQEyLOCvmvlFuiXkjcpqYd', '64EQ0PPrIU6zC0MFDAFHBgj6JZE8jRFfZIpq8cP82ImcGQIWjU'
+  config.omniauth :facebook, Rails.application.secrets.facebook_client_id, Rails.application.secrets.facebook_client_secret, callback_url: "http://127.0.0.1/users/auth/facebook/callback"
+  config.omniauth :github, Rails.application.secrets.github_client_id, Rails.application.secrets.github_client_secret
 end

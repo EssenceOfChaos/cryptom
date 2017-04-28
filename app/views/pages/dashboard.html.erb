@@ -29,10 +29,12 @@
 </div>
 <div class="six wide column">
   <div class="label">
+  <strong>
    Current Bitcoin Price
+   </strong>
   </div>
 <div class="btc_price">
-     1 bitcoin = <span class="btc_value"><%= number_to_currency(@price.price) %></span> as of <%=current_time.strftime("%I:%M%p")%>
+     1 Bitcoin = <span class="btc_value"><%= number_to_currency(@price.price) %></span> as of <%=current_time.strftime("%I:%M%p")%>
   </div>
 
 </div>

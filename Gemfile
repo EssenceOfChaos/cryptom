@@ -34,8 +34,15 @@ gem 'mongoid', '~> 6.1.0'
 gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
 gem 'devise'
 gem 'block_io'
+gem 'kraken_ruby'
 gem 'httparty'
 gem 'newrelic_rpm'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'linkedin'
+gem 'omniauth'
+gem 'omniauth-linkedin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,6 +50,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
+  gem 'mongoid-rspec'
 end
 
 group :development do

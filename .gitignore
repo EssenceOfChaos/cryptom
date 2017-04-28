@@ -19,5 +19,5 @@
 # Ignore sensitive data
 # **********comment out to run in production on heroku
 # config/secrets.yml
-# .rbenv-vars
+.rbenv-vars
 # mongoid.yml

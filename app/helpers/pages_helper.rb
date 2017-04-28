@@ -1,6 +1,6 @@
 require 'httparty'
 module PagesHelper
-url = 'https://api.gemini.com/v1/pubticker/btcusd'
+url = "https://blockchain.info/q/24hrprice"
 response = HTTParty.get(url)
 @btc_price = response.parsed_response
 end
