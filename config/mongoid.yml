@@ -168,5 +168,7 @@ production:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
       uri: "mongodb://cryptom:monster@ds115671.mlab.com:15671/heroku_m65w1mw0"
+  options:
+    raise_not_found_error: false
    
 
