@@ -26,17 +26,43 @@
   <p>Last signed in <%=time_ago_in_words(current_user.last_sign_in_at)%> ago</p>
   </div>
 </div>
-</div>
+</div> <!-- end of first six wide column -->
 <div class="six wide column">
-  <div class="label">
+
+  <div class="ui compact segment">
+    <div class="label">
   <strong>
    Current Bitcoin Price
    </strong>
   </div>
 <div class="btc_price">
-     1 Bitcoin = <span class="btc_value"><%= number_to_currency(@price.price) %></span> as of <%=current_time.strftime("%I:%M%p")%>
+     1 Bitcoin = <span class="btc_value"><%= number_to_currency(@price.price) %></span> USD
   </div>
+  </div>
+<div class="btc_balance">
+  <i class="bitcoin icon"></i> <strong>Current Balance: </strong>
+  <%= @balance%> 
+</div>
+<div class="btc_address">
+ <i class="green lightning icon"></i> <strong>Wallet Address: </strong>
+  <%=@address %>   
+</div>
 
+</div><!-- end of second six wide column -->
+<div class="four wide column">
+  -- TABLE PLACEHOLDER --
 </div>
+</div><!-- end of the grid -->
 </div>
-</div>
+
+<h2 class="ui dividing header">
+  <i class="green lightning icon"></i>
+  <div class="content">
+    Green Addresses
+    <div class="sub header">Next Generation Cryptocurrency</div>
+  </div>
+</h2>
+<p>Green Addresses allow allow users to transact coins instantly on enabled sites. This allows vendors to process transactions immediately without waiting for confirmations as the wallet balance has been verified by <a href="http://www.block.io/#_l_1bf">Block.io</a> </p>
+
+
+

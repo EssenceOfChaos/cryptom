@@ -14,9 +14,18 @@ def current_time
   current_time = DateTime.now
 end
 
+def wallet_info
+ wallet = BlockIo.get_address_balance :labels => current_user.email
+ wallet_info = JSON.parse(wallet.to_json, object_class: OpenStruct)
+end
+
+protected
+
+
 def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username]) 
     devise_parameter_sanitizer.permit(:account_update, keys: [:username])
 end
+
 include PagesHelper
 end

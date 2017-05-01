@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   
 root 'pages#index'
 
+get 'wallets/create'
+get 'wallets/show'
+
   get 'pages/index'
   get 'pages/dashboard'
   get 'pages/contact'

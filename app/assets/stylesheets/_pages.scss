@@ -95,8 +95,11 @@ body {
 // ***** Alignment Styling ***** //
 
 
-.center {
+#center {
   text-align: center;
+  display: block;
+  margin: auto;
+  align-content: center;
 }
 
 #float_right {
@@ -118,5 +121,10 @@ font-size: 1.3rem;
   font-size: 1.4rem;
   color: darken( $blue, 40% );
   font-weight: bold;
+
+}
+
+.btc_balance {
+  margin-top: 45px;
 
 }
