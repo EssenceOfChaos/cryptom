@@ -129,7 +129,7 @@ font-size: 1.3rem;
 }
 
 
-.ui.message !important {
-  padding: 1.4em 1.5em;
-  line-height: 0em;
+.ui.message {
+  padding: 1.4em 1.5em  !important;
+  line-height: 0em  !important;
 }
