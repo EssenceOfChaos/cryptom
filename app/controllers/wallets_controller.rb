@@ -7,7 +7,7 @@ def create
 response = BlockIo.get_new_address :label => current_user.email
 symbol   = JSON.parse(response.to_json, symbolize_names: true)
 @symbol = symbol
-redirect_back fallback_location: "/", notice: 'Wallet was successfully created.'
+redirect_to "/pages/dashboard", notice: 'Wallet was successfully created.'
 end
 
 def show
