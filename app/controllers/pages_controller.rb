@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  
+  before_action :check_address, only: [:dashboard]
 
   def index
   end
@@ -14,6 +14,14 @@ class PagesController < ApplicationController
   def contact
   end
 
+def check_address
+  check = BlockIo.get_address_by :label => current_user.email
+  checker = JSON.parse(check.to_json, object_class: OpenStruct)
+  unless checker.status == 'success'
+    redirect_to "/", alert: "Create a wallet before accessing your dashboard"
+  end
+
+end
 
 
 end

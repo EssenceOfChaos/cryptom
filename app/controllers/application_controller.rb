@@ -19,6 +19,8 @@ def wallet_info
  wallet_info = JSON.parse(wallet.to_json, object_class: OpenStruct)
 end
 
+
+
 protected
 
 
