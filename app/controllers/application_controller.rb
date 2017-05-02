@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-    before_action :authenticate_user!
+  before_action :authenticate_user!
 
 helper_method :current_price, :current_time
+
 
 def current_price
   price = BlockIo.get_current_price :price_base => 'USD'
@@ -29,5 +30,5 @@ def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:account_update, keys: [:username])
 end
 
-include PagesHelper
+
 end

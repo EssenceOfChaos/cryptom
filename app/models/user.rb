@@ -15,6 +15,7 @@ class User
   ## Associations ##
   embeds_one :user_linkedin_connection, :class_name => 'User::LinkedinConnection'
   has_many :identities, :dependent => :destroy
+  embeds_one :wallet
 
 
   ## Database authenticatable
@@ -24,6 +25,7 @@ class User
   field :uid, type: String
   field :provider, type: String
   field :image, type: String
+
   ## Recoverable
   field :reset_password_token,   type: String
   field :reset_password_sent_at, type: Time

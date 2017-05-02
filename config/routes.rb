@@ -11,6 +11,8 @@ get 'wallets/show'
   get 'pages/bitcoin'
   get 'pages/more_info', as: 'FAQ'
 
+# get '/404', to: 'errors#not_found'
+# get '/500', to: 'errors#internal_server_error'
+
 devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
