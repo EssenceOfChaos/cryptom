@@ -21,3 +21,4 @@
 # config/secrets.yml
 .rbenv-vars
 # mongoid.yml
+.env
