@@ -14,5 +14,5 @@ kraken_key=OlYSG3Xw1Q163NE1aHMxzW/ojN9QegbIVdYJ0IqAMQWbWAxNU9u96KjpuxLXlB5+aWt1y
 oauth=159391544661-iq6ac4u7osrj3qfuu4bifk8voim6vnk4.apps.googleusercontent.com
 oauth_secret=fr1gNdkvCsUYJLzSa6yAa5OD
 SENDMAIL_PASSWORD=fs106513
-SENDMAIL_USERNAME=noreply@webteamuniversity.tech
-MAIL_HOST=67.211.208.22
+SENDMAIL_USERNAME=noreply@cryptom.space
+MAIL_HOST=cryptom.space
