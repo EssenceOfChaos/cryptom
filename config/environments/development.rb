@@ -60,7 +60,7 @@ Rails.application.configure do
     user_name:      ENV['SENDMAIL_USERNAME'],
     password:       ENV['SENDMAIL_PASSWORD'],
     domain:         ENV['MAIL_HOST'],
-    address:       'mail.webteamuniversity.tech',
+    address:       'mail.cryptom.space',
     port:          '465',
     authentication: :plain,
     enable_starttls_auto: true
