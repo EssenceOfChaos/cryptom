@@ -14,4 +14,4 @@ Cryptom is a side project I've been working on for awhile, aimed at bringing cry
 
 ### Project => Company
 
-* This project may have multiple contributors at the time it develops a revenue stream. I believe the project's ownership should be assigned by a system of *founders equity*. A multi-signature wallet should be created assigning the develpors equity based on their contributions to the project. This would allow the business to be autonomous with decentralized control.
+* This project may have multiple contributors at the time it develops a revenue stream. I believe the project's ownership should be assigned by a system of *founders equity*. A multi-signature wallet should be created assigning the developers equity based on their contributions to the project. This would allow the business to be autonomous with decentralized control.
