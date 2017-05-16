@@ -17,8 +17,7 @@
 .byebug_history
 
 # Ignore sensitive data
-# **********comment out to run in production on heroku
-# config/secrets.yml
+config/secrets.yml
 .rbenv-vars
 # mongoid.yml
 .env
