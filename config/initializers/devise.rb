@@ -278,6 +278,8 @@ Devise.setup do |config|
 
   config.omniauth :linkedin, '7742ah72x6lo8j', 'AOGm1R0Ng1eOBz25', :scope => 'r_basicprofile r_emailaddress'
   config.omniauth :twitter, 'imBAQEyLOCvmvlFuiXkjcpqYd', '64EQ0PPrIU6zC0MFDAFHBgj6JZE8jRFfZIpq8cP82ImcGQIWjU'
-  config.omniauth :facebook, Rails.application.secrets.facebook_client_id, Rails.application.secrets.facebook_client_secret, callback_url: "http://127.0.0.1/users/auth/facebook/callback"
+  config.omniauth :facebook, Rails.application.secrets.facebook_client_id, Rails.application.secrets.facebook_client_secret
   config.omniauth :github, Rails.application.secrets.github_client_id, Rails.application.secrets.github_client_secret
 end
+
+
