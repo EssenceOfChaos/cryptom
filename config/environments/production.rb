@@ -75,17 +75,19 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }
 config.action_mailer.perform_deliveries = true
 
-#SMTP settings for mailgun
-config.action_mailer.delivery_method = :mailgun
-
-config.action_mailer.mailgun_settings = {
+######### SMTP settings for mailgun PRODUCTION ########
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.default_url_options = { :host => 'cryptom.space' }
+config.action_mailer.smtp_settings = {
 :api_key => 'key-cfb9c949738a93f6e46a5894b58494a5',
 :address              => "smtp.mailgun.org",
 :port                 => 587,
-domain: 'cryptom.space'
+domain: 'cryptom.space',
+user_name: ENV['mailgun_user'],
+password: ENV['mailgun_password'],
+:authentication => :plain,
   }
 
 

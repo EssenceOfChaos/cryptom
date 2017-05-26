@@ -1,3 +1,5 @@
+mailgun_user=customer_service@cryptom.space
+mailgun_password=monster
 SECRET=super-secret-and-extra-extra-important
 FACEBOOK_CLIENT_ID=644083385771639
 FACEBOOK_CLIENT_SECRET=3667bd07786632d3b65f6eb76efc8823
