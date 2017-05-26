@@ -34,7 +34,6 @@ gem 'mongoid', '~> 6.1.0'
 gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
 gem 'devise'
 gem 'block_io'
-
 gem 'httparty'
 gem 'newrelic_rpm'
 gem 'omniauth-twitter'
