@@ -43,6 +43,7 @@ gem 'omniauth-github'
 gem 'linkedin'
 gem 'omniauth'
 gem 'omniauth-linkedin'
+gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
