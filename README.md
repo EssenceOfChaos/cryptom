@@ -8,7 +8,7 @@ Cryptom is a side project I've been working on for awhile, aimed at bringing cry
 
 * The Database is MongoDB
 
-* Check out the current live version [here](http://cryptom.space)
+* Check out the current live version [here](https://cryptom.herokuapp.com/)
 
 * Feel free to submit a PR
 
